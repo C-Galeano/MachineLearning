@@ -77,6 +77,17 @@ If the character moves toward an objective, defeats an enemy, or completes a lev
 At the beginning, the computer may make many random or inefficient decisions because it does not know which actions are useful. However, after playing the game many times, it can remember which actions resulted in positive or negative outcomes and gradually improve its strategy.
 In this way, reinforcement learning is similar to learning through experience. Instead of being directly told what the correct action is, the computer experiments with different possibilities, receives feedback from the environment, and learns which decisions are more effective.
 
+==> Semi-Supervised Learning 
+Semi-supervised learning is a type of machine learning in which a computer learns by combining a small amount of labeled data with a large amount of unlabeled data.Unlike supervised learning, where every single piece of information includes the correct answer, this method allows the computer to work with mostly raw, unstructured data.
+Instead of requiring human experts to label everything, it uses the few known answers to unlock the patterns hidden in the rest of the information.During the learning process, the computer starts by analyzing the small dataset that already has clear labels.
+It learns the basic rules from those examples and then applies that knowledge to the massive mountain of unlabeled data, making educated guesses about the missing answers.The objective of the computer is to improve its overall accuracy without requiring massive amounts of time and manual labor.
+To accomplish this, it constantly checks its own guesses, keeps the ones it is most confident about, and uses them to build a stronger, more intelligent model.
+For example, semi-supervised learning can be used to teach a computer to identify rare diseases in medical chest X-rays.
+Having expert doctors look at and label millions of scans is incredibly expensive and time-consuming.Instead, doctors might manually label only a few hundred scans, marking exactly where the diseases are. 
+The computer studies these few examples to understand what a sick lung looks like and then automatically scans through thousands of unlabeled medical images to find similar patterns.At the beginning, the computer's guesses on the unlabeled images might be shaky. However, by grouping similar-looking scans together and spreading the known labels to their closest matches, it gradually learns to identify the disease across the entire database.
+In this way, semi-supervised learning is similar to studying with a few teacher-guided examples and a massive textbook of practice problems. Instead of needing a teacher to grade every single page, the student uses the solved examples to understand the logic and then solves the rest of the book independently.
+
+
 """
     return Response(text, mimetype="text/plain")
 
