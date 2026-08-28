@@ -41,6 +41,17 @@ In simple words:
 
 Machine Learning is a way to teach a machine to learn from experience, using data. It can make decisions or predictions without a programmer writing every rule directly.
 
+==> Supervised Learning (with labeled data)
+Supervised Learning is a type of machine learning where a computer learns from labeled data.
+Labeled data means that the information already has a correct answer or category.
+During the training process, the computer studies many examples and tries to find patterns in the data.
+When the computer makes a prediction, it compares its answer with the correct label and learns from its mistakes.
+After training, the model can use what it learned to make predictions about new information that it has never seen before.
+
+For example, supervised learning can be used to detect spam emails. We can give the computer thousands of emails that are already labeled as “spam” or “not spam.”
+The computer analyzes these emails and learns patterns, such as certain words, links, or types of messages that are common in spam emails.
+Later, when a new email arrives, the computer can analyze it and predict whether it is spam or not.
+In this way, supervised learning is similar to learning with a teacher because the computer receives examples with the correct answers and uses them to improve its predictions.
 """
     return Response(text, mimetype="text/plain")
 
