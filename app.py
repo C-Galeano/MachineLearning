@@ -42,6 +42,7 @@ In simple words:
 Machine Learning is a way to teach a machine to learn from experience, using data. It can make decisions or predictions without a programmer writing every rule directly.
 
 ==> Supervised Learning (with labeled data)
+
 Supervised Learning is a type of machine learning where a computer learns from labeled data.
 Labeled data means that the information already has a correct answer or category.
 During the training process, the computer studies many examples and tries to find patterns in the data.
@@ -52,6 +53,19 @@ For example, supervised learning can be used to detect spam emails. We can give 
 The computer analyzes these emails and learns patterns, such as certain words, links, or types of messages that are common in spam emails.
 Later, when a new email arrives, the computer can analyze it and predict whether it is spam or not.
 In this way, supervised learning is similar to learning with a teacher because the computer receives examples with the correct answers and uses them to improve its predictions.
+
+==> Unsupervised learning (no data labeled)
+
+Unsupervised learning is a type of machine learning in which a computer learns from data that is not labeled.
+Unlabeled data are those that do not have a correct answer or category previously assigned.
+During the training process, the computer analyzes numerous data and tries to find patterns, relationships or groups within the information.
+Unlike supervised learning, the computer does not receive a correct answer with which to compare its results. For this reason, it must discover by itself the characteristics and relationships present in the data.
+After training, the model can use patterns it has found to organize information, identify groups, or discover relationships that may not be obvious to the naked eye.
+
+For example, unsupervised learning can be used to rank customers based on their buying habits. We can provide the computer with information about thousands of customers, such as what products they buy, how often they make purchases, and how much money they spend, without indicating which group each customer belongs to.
+The computer analyzes this information and may discover different groups of clients with similar characteristics. For example, you can find one group of customers who buy frequently, another that spend large amounts of money, and another that make occasional purchases.
+In this way, unsupervised learning is similar to discovering groups by oneself, as the computer does not receive the correct categories and must find patterns and relationships in the data autonomously.
+
 """
     return Response(text, mimetype="text/plain")
 
