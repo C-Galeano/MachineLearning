@@ -66,6 +66,17 @@ For example, unsupervised learning can be used to rank customers based on their 
 The computer analyzes this information and may discover different groups of clients with similar characteristics. For example, you can find one group of customers who buy frequently, another that spend large amounts of money, and another that make occasional purchases.
 In this way, unsupervised learning is similar to discovering groups by oneself, as the computer does not receive the correct categories and must find patterns and relationships in the data autonomously.
 
+==> Reinforcement Learning (no labeled data, but with rewards)
+
+Reinforcement learning is a type of machine learning in which a computer learns by interacting with an environment and receiving rewards or penalties based on the actions it takes.
+Unlike supervised learning, the computer is not given a dataset containing the correct answer for every situation. Instead, it must learn through trial and error, discovering which actions produce better results over time.
+During the learning process, the computer, called an agent, observes the current situation of its environment and chooses an action. After performing that action, the environment changes and the agent receives a reward or penalty depending on the result.
+The objective of the agent is to learn which actions should be taken in different situations in order to obtain the highest possible total reward. To accomplish this, the agent must learn from its previous experiences and improve its decisions over time.
+For example, reinforcement learning can be used to teach a computer to play a video game. We can give the computer control over a character and allow it to interact with the game. 
+If the character moves toward an objective, defeats an enemy, or completes a level, the computer can receive a positive reward. If it loses a life or makes an incorrect decision, it can receive a negative reward.
+At the beginning, the computer may make many random or inefficient decisions because it does not know which actions are useful. However, after playing the game many times, it can remember which actions resulted in positive or negative outcomes and gradually improve its strategy.
+In this way, reinforcement learning is similar to learning through experience. Instead of being directly told what the correct action is, the computer experiments with different possibilities, receives feedback from the environment, and learns which decisions are more effective.
+
 """
     return Response(text, mimetype="text/plain")
 
