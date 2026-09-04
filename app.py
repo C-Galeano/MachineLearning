@@ -1,4 +1,6 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
+import LinearRegression
+
 
 app = Flask(__name__)
 
@@ -79,6 +81,15 @@ In this way, reinforcement learning is similar to learning through experience. I
 
 """
     return Response(text, mimetype="text/plain")
+
+@app.route("/LinearRegression/", methods=["GET", "POST"])
+
+def calculate():
+    calculateResult = None
+    if request.method == "POST":
+        hours = float(request.form["hours"])
+        calculateResult = LinearRegression.calculatorGrade(hours)
+    return render_template("tempLinearRegression.html", result=calculateResult)
 
 if __name__ == "__main__":
     app.run(debug=True)
